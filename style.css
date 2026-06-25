@@ -68,8 +68,9 @@ main {
   font-family: var(--system-font);
 }
 
-main p {
+.upper-container {
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 main label {
@@ -115,4 +116,5 @@ main > button {
   border: 0;
   font-family: var(--system-font);
   font-weight: bold;
+  font-size: 1rem;
 }
