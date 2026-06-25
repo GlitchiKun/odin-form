@@ -24,7 +24,7 @@ header {
 }
 
 .odin-title {
-  background-color: rgba(100, 100, 100, 50);
+  background-color: rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,10 +86,11 @@ main > * {
 }
 
 #main-form {
-  border: 1px solid lightgrey;
+  border: 1px solid rgb(222, 222, 222);
   padding-top: 20px;
   padding-bottom: 40px;
   background-color: white;
+  box-shadow: 0 4px 2px -2px lightgray;
 }
 
 #main-form > h2 {
@@ -109,6 +110,7 @@ main > * {
 
 main > button {
   padding: 6px 12px;
+  margin-top: 12px;
   margin-left: 32px;
   max-width: 150px;
   color: white;
@@ -124,4 +126,13 @@ main a {
   font-weight: bold;
   text-decoration: none;
   color: var(--primary-color);
+}
+
+input:user-invalid {
+  border: 2px solid red;
+  border-radius: 3px;
+}
+
+.input-container:has(input[required]) > label:after {
+  content: "*";
 }
