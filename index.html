@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div class="odin-heading">
+      <div class="odin-title">
         <img src="images/odin-lined.png" alt="The Odin Project Logo" />
         <h1 class="odin-title">Odin</h1>
       </div>
@@ -25,46 +25,49 @@
       </p>
       <p>Lorem ipsum dolor sit amet consectetur.</p>
 
-      <form action="">
-        <section class="main-form">
-          <h1>Let's do this !</h1>
+      <form action="" id="main-form">
+        <h2>Let's do this !</h2>
 
-          <div>
+        <section>
+          <div class="input-container">
             <label for="first-name">First name</label>
             <input type="text" name="first-name" id="first-name" />
           </div>
 
-          <div>
+          <div class="input-container">
             <label for="last-name">Last name</label>
             <input type="text" name="last-name" id="last-name" />
           </div>
+        </section>
 
-          <div>
+        <section>
+          <div class="input-container">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" />
           </div>
-
-          <div>
+          <div class="input-container">
             <label for="phone-number">Phone number</label>
             <input type="tel" name="phone-number" id="phone-number" />
           </div>
+        </section>
 
-          <div>
+        <section>
+          <div class="input-container">
             <label for="password">Password</label>
             <input type="password" name="password" id="password" />
           </div>
-
-          <div>
+          <div class="input-container">
             <label for="confirmed-password">Confirm password</label>
             <input
               type="password"
               name="confirmed-password"
               id="confirmed-password"
             />
-          </div>
         </section>
-        <button type="submit">Create Account</button>
+        </div>
       </form>
+
+      <button type="submit" form="main-form">Create Account</button>
 
       <p>Already have an account ? <a class="login" href="">Log in</a></p>
     </main>
